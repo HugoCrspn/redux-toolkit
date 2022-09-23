@@ -90,7 +90,7 @@ html {
     margin-right: auto;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    max-width: 160rem;
+    max-width: 120rem;
 }
 
 body {
@@ -99,4 +99,24 @@ body {
     line-height: 2.3rem;
     background-color: $background;
     color: $white;
+}
+
+.btn {
+    padding: 1.3rem 2.7rem;
+    cursor: pointer;
+    color: $white;
+    background: 
+    linear-gradient(#090B11, #090B11) padding-box,
+    linear-gradient(to right bottom, $purple, $orange) border-box;
+    border-radius: .8rem;
+    border: 1px solid transparent;
+    font-family: $dmsansbold;
+    font-size: 1.6rem;
+    transition: .2s ease;
+    -webkit-transition: .2s ease;
+    -moz-transition: .2s ease;
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0px 16px 70px 0px rgba(255, 255, 255, .1);
+    }
 }

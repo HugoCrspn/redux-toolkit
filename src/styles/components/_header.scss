@@ -1,0 +1,38 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    .block-text {
+        h1 {
+            font-family: $euclid;
+            font-size: 6.4rem;
+            line-height: 6rem;
+        }
+        h2 {
+            font-family: $euclid;
+            font-size: 4.5rem;
+            line-height: 5.7rem;
+            color: $purple;
+            &::before {
+                content: url('../../../public/img/discovering.png');
+                margin-right: 1rem;
+            }
+        }
+        button {
+            margin-top: 4rem;
+            &:after {
+                content: url('../../../public/img/icons/cross.svg');
+                display: inline-block;
+                margin-left: 1rem;
+                transform: rotate(0deg);
+                transition: .3s ease;
+            }
+            &:hover {
+                &::after {
+                    transform: rotate(90deg);
+                }
+            }
+        }
+    }
+}

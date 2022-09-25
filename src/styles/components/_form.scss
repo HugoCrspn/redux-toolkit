@@ -1,0 +1,68 @@
+.form-container {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10rem;
+    img {
+        margin-left: -7rem;
+    }
+    #add-figurine-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 0.8fr 1.5fr 0.7fr; 
+        gap: 20px 20px; 
+        grid-template-areas: 
+            "input-number input-name input-name input-select input-select"
+            "input-description input-description input-description input-description input-description"
+            "input-date input-date input-checkbox-box input-checkbox-chase input-checkbox-exlusive"; 
+        .input {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            label {
+                margin-bottom: 1rem;
+            }
+            input {
+                width: 100%;
+                transition: .3s ease;
+                &:focus {
+                    box-shadow: 0px 16px 70px 0px rgba(255, 255, 255, .1);
+                    border: 1px solid rgba(255, 255, 255, .5);
+                }
+            }
+            select {
+                transition: .3s ease;
+                &:focus {
+                    box-shadow: 0px 16px 70px 0px rgba(255, 255, 255, .1);
+                    border: 1px solid rgba(255, 255, 255, .5);
+                }
+            }
+            textarea {
+                height: 100%;
+                transition: .3s ease;
+                &:focus {
+                    box-shadow: 0px 16px 70px 0px rgba(255, 255, 255, .1);
+                    border: 1px solid rgba(255, 255, 255, .5);
+                }
+            }
+        }
+        .input-reversed {
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+            label {
+                margin-right: 1rem;
+            }
+        }
+        .input-number { grid-area: input-number; }
+        .input-name { grid-area: input-name; }
+        .input-select { grid-area: input-select; }
+        .input-description { grid-area: input-description;}
+        .input-date { grid-area: input-date; }
+        .input-checkbox-box { grid-area: input-checkbox-box; }
+        .input-checkbox-chase { grid-area: input-checkbox-chase; }
+        .input-checkbox-exlusive { grid-area: input-checkbox-exlusive; }
+        .input-submit {
+            margin-top: 3rem;
+        }
+    }
+}

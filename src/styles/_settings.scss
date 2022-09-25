@@ -120,3 +120,52 @@ body {
         box-shadow: 0px 16px 70px 0px rgba(255, 255, 255, .1);
     }
 }
+
+input,
+textarea,
+select {
+    resize: none;
+    border-radius: .8rem;
+    background: $background;
+    color: $white;
+    font-family: $dmsansregular;
+    font-size: 1.6rem;
+    height: 4.5rem;
+    border: 1px solid $grey;
+    padding: 1.2rem 1.5rem;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    height: 35px;
+    transform: scale(0.6);
+    border: 2px solid $grey;
+    border-radius: .8rem;
+    background: $background;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+input[type="checkbox"]:checked {
+    background: $white;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    color: $white;
+    background: 
+    linear-gradient(#090B11, #090B11) padding-box,
+    linear-gradient(to right bottom, $purple, $orange) border-box;
+    border-radius: .8rem;
+    border: 1px solid transparent;
+    font-family: $dmsansbold;
+    font-size: 1.6rem;
+    transition: .2s ease;
+    -webkit-transition: .2s ease;
+    -moz-transition: .2s ease;
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0px 16px 70px 0px rgba(255, 255, 255, .1);
+    }
+}

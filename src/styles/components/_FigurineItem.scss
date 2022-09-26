@@ -1,0 +1,36 @@
+.card {
+    border: 1px solid $grey;
+    padding: 3rem;
+    border-radius: .8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .top-card {
+        margin-bottom: 3rem;
+        h2 {
+            font-family: $euclid;
+            font-size: 4rem;
+            color: $purple;
+            font-weight: 100;
+        }
+    }
+    .bottom-card {
+        display: flex;
+        justify-content: space-between;
+        .left {
+            align-self: flex-end;
+        }
+        img {
+            width: 17rem;
+            height: 13rem;
+            object-fit: cover;
+            border-radius: .8rem;
+            cursor: pointer;
+            transition: .3s ease;
+            &:hover {
+                transform: translateY(-10px);
+                box-shadow: 0px 16px 70px 0px rgba(255, 255, 255, .1);
+            }
+        }
+    }
+}

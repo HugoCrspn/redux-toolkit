@@ -1,0 +1,7 @@
+.figurines-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 7.7rem;
+    row-gap: 5.7rem;
+    margin-bottom: 20rem;
+}

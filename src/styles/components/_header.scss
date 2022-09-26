@@ -29,7 +29,7 @@
                 transition: .3s ease;
             }
             &:hover {
-                &::after {
+                &:after {
                     transform: rotate(90deg);
                 }
             }

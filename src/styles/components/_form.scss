@@ -30,6 +30,12 @@
                 }
             }
             select {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                background-image: url('../../../public/img/icons/arrow.svg');
+                background-repeat: no-repeat;
+                background-position-x: 93%;
+                background-position-y: 18px;
                 transition: .3s ease;
                 &:focus {
                     box-shadow: 0px 16px 70px 0px rgba(255, 255, 255, .1);

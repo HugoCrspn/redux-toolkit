@@ -137,6 +137,10 @@ select {
     padding: 1.2rem 1.5rem;
 }
 
+option {
+    font-family: $dmsansregular;
+}
+
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
     -webkit-appearance: none;

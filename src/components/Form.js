@@ -1,6 +1,9 @@
 import React from 'react';
+import * as funkoPopCategories from "../services/funkopopCategories";
 
 const Form = () => {
+
+    const funkoPopCategoriesList = funkoPopCategories.getFunkoPopCategories();
 
     return (
         <section className='container form-container'>
@@ -24,11 +27,11 @@ const Form = () => {
                 </div>
                 <div className="input input-select">
                     <label htmlFor="category">Category</label>
-                    <select value="Category" >            
-                        <option value="grapefruit">Pop Disney</option>
-                        <option value="lime">Pop Movies</option>
-                        <option value="coconut">Pop Series</option>
-                        <option value="mango">Pop Marvel</option>
+                    <select> 
+                        <option value="">- Select Category -</option>
+                        {funkoPopCategoriesList.map((f) => (
+                            <option value={f.name}>{f.name}</option>
+                        ))}
                     </select>
                 </div>
                 <div className="input input-description">

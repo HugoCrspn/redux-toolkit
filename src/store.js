@@ -12,7 +12,7 @@ const figurineSlice = createSlice({
     reducers: {
         addFigurine: (state, action) => {
             // {type: "figurine/addFigurine", payload: {}}
-            console.log(action.payload);
+            state.push(action.payload);
         },
         modifyFigurine: () => {},
         deleteFigurine: () => {}

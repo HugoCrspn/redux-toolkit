@@ -82,6 +82,7 @@ $dmsansitalic: "DM Sans Italic", sans-serif;
 html {
     /* 1rem = 10px */
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -116,6 +117,10 @@ body {
     -webkit-transition: .2s ease;
     -moz-transition: .2s ease;
     &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0px 16px 70px 0px rgba(255, 255, 255, .1);
+    }
+    &:focus {
         transform: translateY(-2px);
         box-shadow: 0px 16px 70px 0px rgba(255, 255, 255, .1);
     }
@@ -162,6 +167,9 @@ input[type="checkbox"] {
     background: $background;
     cursor: pointer;
     transition: .3s ease;
+    &:focus {
+        box-shadow: 0px 16px 70px 0px rgba(255, 255, 255, .1);
+    }
 }
 
 input[type="checkbox"]:checked {
@@ -182,6 +190,10 @@ input[type="submit"] {
     -webkit-transition: .2s ease;
     -moz-transition: .2s ease;
     &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0px 16px 70px 0px rgba(255, 255, 255, .1);
+    }
+    &:focus {
         transform: translateY(-2px);
         box-shadow: 0px 16px 70px 0px rgba(255, 255, 255, .1);
     }

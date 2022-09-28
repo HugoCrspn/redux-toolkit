@@ -20,6 +20,15 @@ const Form = () => {
         return `${day}/${month}/${year}`;
     }
 
+    const focusOnFigurinesList = () => {
+        const target = document.querySelector('.figurines-container').offsetTop;
+
+        window.scrollTo({
+            left: 0,
+            top: target - 100
+        })
+    }
+
     const [inputs, setInputs] = useState({});
 
     const dispatch = useDispatch();
@@ -37,7 +46,9 @@ const Form = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        inputs.purchaseDate = getFormatDate(inputs.purchaseDate);
+        if(inputs.purchaseDate) {
+            inputs.purchaseDate = getFormatDate(inputs.purchaseDate);
+        }
         inputs.id = uuid().slice(0,8);
         inputs.publishDate = getDateTime();
         dispatch({
@@ -48,6 +59,7 @@ const Form = () => {
         event.target[6].checked = false;
         event.target[7].checked = false;
         setInputs({});
+        focusOnFigurinesList();
     }
 
     const funkoPopCategoriesList = funkoPopCategories.getFunkoPopCategories();

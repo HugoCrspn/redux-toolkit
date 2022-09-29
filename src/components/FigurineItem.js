@@ -93,7 +93,7 @@ const FigurineItem = (props) => {
                         <p className='checkbox-style'><span className={figurine.exclusive ? "active" : ""}></span>Exclusive</p>
                     </div>
                 </div>
-                {/* <img id="card-img" className={imgFull ? "imgFullBackground" : ""} onClick={imgToggle} src={figurine.imgUrl} alt={`Représente la figurine : ${figurine.name}`} /> */}
+                <img id="card-img" className={imgFull ? "imgFullBackground" : ""} onClick={imgToggle} src={figurine.imgUrl} alt={`Représente la figurine : ${figurine.name}`} />
             </div>
             <svg onClick={settingsToggle} width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clipPath="url(#clip0_69_86)">

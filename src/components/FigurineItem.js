@@ -1,8 +1,11 @@
 import React from 'react';
 import { useState } from 'react';
 import { motion } from "framer-motion";
+import { useDispatch } from 'react-redux';
 
 const FigurineItem = (props) => {
+
+    const dispatch = useDispatch();
 
     const { figurine } = props;
 
@@ -16,6 +19,44 @@ const FigurineItem = (props) => {
         setToggleActions(!toggleActions);
     }
 
+    const [toggleModify, setToggleModify] = useState(false);
+    const [inputsUpdate, setInputsUpdate] = useState({
+        name: figurine.name
+    });
+
+    const handleChangeUpdate = (event) => {
+        const name = event.target.name;
+        let value;
+        if (event.target.type === "checkbox") {
+            value = event.target.checked;
+        } else {
+            value = event.target.value;
+        }
+        setInputsUpdate(values => ({...values, [name]: value}));
+    }
+
+    const handleUpdate = (event) => {
+        dispatch({
+            type: "figurine/modifyFigurine",
+            payload: {
+                id: figurine.id,
+                name: inputsUpdate.name
+            }
+        })
+        setToggleModify(!toggleModify);
+    }
+
+    const modifyFigurineItem = () => {
+        setToggleModify(!toggleModify);
+    }
+
+    const deleteFigurineItem = () => {
+        dispatch({
+            type: "figurine/deleteFigurine",
+            payload: figurine.id
+        })
+    }
+
     return (
         <motion.div
             initial={{ opacity: 0, y: 100 }}
@@ -25,7 +66,21 @@ const FigurineItem = (props) => {
             className="card"
         >
             <div className="top-card">
-                <h2>{figurine.name}</h2>
+                {toggleModify === false && (
+                    <h2>{figurine.name}</h2>
+                )}
+                {toggleModify && (
+                    <div className="input input-name">
+                        <label htmlFor="name">Name</label>
+                        <input 
+                            name="name"
+                            type="text" 
+                            value={inputsUpdate.name}
+                            onChange={handleChangeUpdate}
+                        />
+                    </div>
+                )
+                }
                 <p className='category'>{figurine.category}<span> #{figurine.number}</span></p>
                 <p className="description">{figurine.description}</p>
             </div>
@@ -47,9 +102,11 @@ const FigurineItem = (props) => {
                 </g>
             </svg>
             <div onClick={settingsToggle} className={toggleActions ? "actions-container show" : "actions-container"}>
-                <button className='btn modify-btn'>Modify</button>
-                <button className='btn delete-btn'>Delete</button>
+                <button onClick={modifyFigurineItem} className='btn modify-btn'>Modify</button>
+                <button onClick={deleteFigurineItem} className='btn delete-btn'>Delete</button>
             </div>
+            {toggleModify && 
+            <button onClick={handleUpdate} className='btn update-btn'>Update</button>}
         </motion.div>
     )
 }

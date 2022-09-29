@@ -7,7 +7,52 @@
     flex-direction: column;
     justify-content: space-between;
     .top-card {
-        margin-bottom: 3rem;
+        .input {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            label {
+                margin-bottom: 1rem;
+            }
+            input {
+                width: 100%;
+                transition: .3s ease;
+                &:focus {
+                    box-shadow: 0px 16px 70px 0px rgba(255, 255, 255, .1);
+                    border: 1px solid rgba(255, 255, 255, .5);
+                }
+            }
+            select {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                background-image: url('../../../public/img/icons/arrow.svg');
+                background-repeat: no-repeat;
+                background-position-x: 93%;
+                background-position-y: 18px;
+                transition: .3s ease;
+                &:focus {
+                    box-shadow: 0px 16px 70px 0px rgba(255, 255, 255, .1);
+                    border: 1px solid rgba(255, 255, 255, .5);
+                }
+            }
+            textarea {
+                height: 100%;
+                transition: .3s ease;
+                &:focus {
+                    box-shadow: 0px 16px 70px 0px rgba(255, 255, 255, .1);
+                    border: 1px solid rgba(255, 255, 255, .5);
+                }
+            }
+        }
+        .input-reversed {
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+            label {
+                margin-right: 1rem;
+            }
+        }
+        .input-name { grid-area: input-name; }
         h2 {
             font-family: $euclid;
             font-size: 4rem;
@@ -159,5 +204,10 @@
                 margin-left: 1rem;
             }
         }
+    }
+    .update-btn {
+        margin-top: 2rem;
+        justify-self: center;
+        align-self: flex-end;
     }
 }

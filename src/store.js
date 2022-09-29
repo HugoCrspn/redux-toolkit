@@ -14,8 +14,13 @@ const figurineSlice = createSlice({
             // {type: "figurine/addFigurine", payload: {}}
             state.push(action.payload);
         },
-        modifyFigurine: () => {},
-        deleteFigurine: () => {}
+        modifyFigurine: (state, action) => {
+            const updatedFigurine = state.find((figurine) => figurine.id === action.payload.id);
+            updatedFigurine.name = action.payload.name;
+        },
+        deleteFigurine: (state, action) => {
+            return state.filter((figurine) => figurine.id !== action.payload);
+        }
     }
 });
 

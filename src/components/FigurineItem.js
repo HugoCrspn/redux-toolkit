@@ -14,7 +14,7 @@ const FigurineItem = (props) => {
     return (
         <motion.div
             initial={{ opacity: 0, y: 100 }}
-            transition={{ delay: 0.5 }}
+            transition={{ delay: 1 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
             className="card"

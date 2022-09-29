@@ -23,6 +23,7 @@ const Header = () => {
                 <button onClick={handleClick} className='btn'>Add figurine</button>
             </div>
             <img src="./img/illustrations-header.png" alt="Illustrations en 3D" />
+            <img className='folder' src="./img/folder.png" alt="Illustration of 3D folder" />
         </div>
     );
 }

@@ -106,7 +106,7 @@ const Form = () => {
                     </select>
                 </div>
                 <div className="input input-description">
-                    <label htmlFor="category">Description</label>
+                    <label htmlFor="description">Description</label>
                     <textarea
                         id="description"
                         name="description"

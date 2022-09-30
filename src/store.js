@@ -15,10 +15,19 @@ const figurineSlice = createSlice({
             state.push(action.payload);
         },
         modifyFigurine: (state, action) => {
+            // {type: "figurine/modifyFigurine", payload: id, infos}
             const updatedFigurine = state.find((figurine) => figurine.id === action.payload.id);
             updatedFigurine.name = action.payload.name;
+            updatedFigurine.category = action.payload.category;
+            updatedFigurine.number = action.payload.number;
+            updatedFigurine.description = action.payload.description;
+            updatedFigurine.purchaseDate = action.payload.purchaseDate;
+            updatedFigurine.box = action.payload.box;
+            updatedFigurine.chase = action.payload.chase;
+            updatedFigurine.exclusive = action.payload.exclusive;
         },
         deleteFigurine: (state, action) => {
+            // {type: "figurine/deleteFigurine", payload: id}
             return state.filter((figurine) => figurine.id !== action.payload);
         }
     }

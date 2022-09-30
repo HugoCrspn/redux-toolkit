@@ -6,6 +6,69 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    .formUpdate {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 0.8fr 1.5fr 0.7fr;
+        grid-template-areas: 
+        "inputUpdate-number inputUpdate-name inputUpdate-name inputUpdate-select inputUpdate-select"
+        "inputUpdate-description inputUpdate-description inputUpdate-description inputUpdate-description inputUpdate-description"
+        "inputUpdate-date inputUpdate-date inputUpdate-checkbox-box inputUpdate-checkbox-chase inputUpdate-checkbox-exlusive"; 
+        gap: 2rem;
+        .input {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            label {
+                margin-bottom: 1rem;
+            }
+            input {
+                width: 100%;
+                transition: .3s ease;
+                &:focus {
+                    box-shadow: 0px 16px 70px 0px rgba(255, 255, 255, .1);
+                    border: 1px solid rgba(255, 255, 255, .5);
+                }
+            }
+            select {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                background-image: url('../../../public/img/icons/arrow.svg');
+                background-repeat: no-repeat;
+                background-position-x: 93%;
+                background-position-y: 18px;
+                transition: .3s ease;
+                &:focus {
+                    box-shadow: 0px 16px 70px 0px rgba(255, 255, 255, .1);
+                    border: 1px solid rgba(255, 255, 255, .5);
+                }
+            }
+            textarea {
+                height: 100%;
+                transition: .3s ease;
+                &:focus {
+                    box-shadow: 0px 16px 70px 0px rgba(255, 255, 255, .1);
+                    border: 1px solid rgba(255, 255, 255, .5);
+                }
+            }
+        }
+        .input-reversed {
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+            label {
+                margin-right: 1rem;
+            }
+        }
+        .input-number { grid-area: inputUpdate-number; }
+        .input-name { grid-area: inputUpdate-name; }
+        .input-select { grid-area: inputUpdate-select; }
+        .input-description { grid-area: inputUpdate-description;}
+        .input-date { grid-area: inputUpdate-date; }
+        .input-checkbox-box { grid-area: inputUpdate-checkbox-box; }
+        .input-checkbox-chase { grid-area: inputUpdate-checkbox-chase; }
+        .input-checkbox-exlusive { grid-area: inputUpdate-checkbox-exlusive; }
+    }
     .top-card {
         .input {
             display: flex;
@@ -77,6 +140,7 @@
     .bottom-card {
         display: flex;
         justify-content: space-between;
+        margin-top: 2rem;
         .left {
             display: flex;
             flex-direction: column;

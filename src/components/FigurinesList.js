@@ -8,8 +8,6 @@ const FigurinesList = () => {
 
     const figurines = useSelector(state => state.figurine);
 
-    console.log(figurines);
-
     const figurinesSortByDate = figurines
         .slice()
         .sort(function(a, b) {

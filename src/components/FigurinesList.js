@@ -8,13 +8,15 @@ const FigurinesList = () => {
 
     const figurines = useSelector(state => state.figurine);
 
+    console.log(figurines);
+
     const figurinesSortByDate = figurines
         .slice()
-        .sort((a, b) => {
-            if (b.publishDate < a.publishDate) { return -1; }
-            if (b.publishDate > a.publishDate) { return 1; }
-            return 0;
-    });
+        .sort(function(a, b) {
+            return new Date(b.publishDate) - new Date(a.publishDate);
+        })
+        
+    // Create sort by date.
 
     return (
         <div

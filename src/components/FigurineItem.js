@@ -6,14 +6,16 @@ import * as funkoPopCategories from "../services/funkopopCategories";
 
 const FigurineItem = (props) => {
 
+    // dispatch to use redux store and actions
     const dispatch = useDispatch();
 
+    // props
     const { figurine } = props;
 
-    const [imgFull, setImgFull] = useState(false);
-    const imgToggle = () => {
-        setImgFull(!imgFull);
-    }
+    // const [imgFull, setImgFull] = useState(false);
+    // const imgToggle = () => {
+    //     setImgFull(!imgFull);
+    // }
 
     const [toggleActions, setToggleActions] = useState(false);
     const settingsToggle = () => {
@@ -43,7 +45,7 @@ const FigurineItem = (props) => {
         setInputsUpdate(values => ({...values, [name]: value}));
     }
 
-    const handleUpdate = (event) => {
+    const handleUpdate = () => {
         dispatch({
             type: "figurine/modifyFigurine",
             payload: {

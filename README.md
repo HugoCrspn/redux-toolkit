@@ -1,7 +1,7 @@
 # Discovering redux-toolkit <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Bomb.png" alt="Bomb" width="25" height="25" />
 
 ## About the project
-![alt text](https://github.com/HugoCrspn/redux-toolkit/blob/master/hero.png?raw=true)
+![alt text](https://github.com/HugoCrspn/redux-toolkit/blob/main/public/img/hero.png)
 
 Using redux-toolkit for small managing webapp
 

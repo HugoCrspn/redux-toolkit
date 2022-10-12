@@ -13,6 +13,23 @@ Using redux-toolkit for small managing webapp for Funko Pop figurines. I made ap
 * <img src="https://api.iconify.design/logos:redux.svg?color=%235b296e" alt="redux-icon" width="20" height="20" /> Redux
 * <img src="https://api.iconify.design/logos:sass.svg?color=%235b296e" alt="redux-icon" width="20" height="20" /> Sass
 
-1. Clone repository on your machine : git clone https://github.com/HugoCrspn/redux-toolkit.git
-2. Install dependancies : npm install
-3. Start app : npm start
+## Getting started
+
+To get a local copy up and running follow these simple steps.
+
+### Installation
+
+1. Clone the repo
+```
+git clone https://github.com/HugoCrspn/redux-toolkit.git
+```
+
+2. Install dependancies
+```
+npm install
+```
+
+3. Start app
+```
+npm start
+```

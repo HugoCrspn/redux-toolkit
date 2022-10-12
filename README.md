@@ -33,3 +33,7 @@ npm install
 ```
 npm start
 ```
+
+## Contact
+
+Hugo Crespin - [contact@hugocrespin.fr](mailto:contact@hugocrespin.fr)

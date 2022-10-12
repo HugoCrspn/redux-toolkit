@@ -8,10 +8,10 @@ Using redux-toolkit for small managing webapp for Funko Pop figurines. I made ap
 
 ### Build with
 
-* <img src="https://api.iconify.design/logos:visual-studio-code.svg?color=%235b296e" alt="react-icon" width="20" height="20" /> Visual Studio Code
-* <img src="https://api.iconify.design/vscode-icons:file-type-reactjs.svg?color=%235b296e" alt="react-icon" width="20" height="20" /> React
-* <img src="https://api.iconify.design/logos:redux.svg?color=%235b296e" alt="redux-icon" width="20" height="20" /> Redux
-* <img src="https://api.iconify.design/logos:sass.svg?color=%235b296e" alt="redux-icon" width="20" height="20" /> Sass
+* <img src="https://api.iconify.design/logos:visual-studio-code.svg?color=%235b296e" alt="react-icon" width="20" height="20" /> ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+* <img src="https://api.iconify.design/vscode-icons:file-type-reactjs.svg?color=%235b296e" alt="react-icon" width="20" height="20" /> ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+* <img src="https://api.iconify.design/logos:redux.svg?color=%235b296e" alt="redux-icon" width="20" height="20" /> ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
+* <img src="https://api.iconify.design/logos:sass.svg?color=%235b296e" alt="redux-icon" width="20" height="20" /> ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
 
 ## Getting started
 

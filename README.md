@@ -8,8 +8,7 @@ Using redux-toolkit for small managing webapp for Funko Pop figurines. I made ap
 ### Build with
 
 * 💻 Vs Studio Code
-* <img src="https://api.iconify.design/vscode-icons:file-type-reactjs.svg?color=%235b296e" alt="react-icon" width="10" height="10" /> React
-* 
+* <img src="https://api.iconify.design/vscode-icons:file-type-reactjs.svg?color=%235b296e" alt="react-icon" width="20" height="20" /> React
 
 1. Clone repository on your machine : git clone https://github.com/HugoCrspn/redux-toolkit.git
 2. Install dependancies : npm install

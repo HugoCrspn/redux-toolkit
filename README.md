@@ -1,7 +1,8 @@
 # Discovering redux-toolkit <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Bomb.png" alt="Bomb" width="25" height="25" />
 
-## About the project
 ![alt text](https://github.com/HugoCrspn/redux-toolkit/blob/main/public/img/hero.png)
+
+## About the project
 
 Using redux-toolkit for small managing webapp for Funko Pop figurines. I made app design on Figma and using React to build it.
 
